@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIKAN</title>
+    <script src="index.js" defer></script>
+</head>
+<style>
+    .container{
+        border: 2px solid red;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        background-color: #f5f5f5;
+    }
+    input{
+        font-size: 1.5rem;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+    .div-1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap:24px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="parent-div1">
+            <input type="text" id="search">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="div-1">
+
+        </div>
+        <div class="result">
+            <h1 id="title"></h1>
+            <h3 id="type"></h3>
+            <h3 id="episodes"></h3>
+            <h3 id="status"></h3>
+            <h3 id="airing"></h3>
+            <h3 id="rating"></h3>
+            <img src="" id="image">
+            <h3 id="url"></h3>
+        </div>
+    </div>
+</body>
+</html>
